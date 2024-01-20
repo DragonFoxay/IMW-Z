@@ -1,4 +1,4 @@
-
+a{margin-left: 5px;}
 .container {
   display: grid;
   grid-template-rows: 150px 10px 150px 10px 25px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px;
