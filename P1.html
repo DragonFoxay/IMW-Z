@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_center-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storybook</title>
+    <link rel="stylesheet" href="./P1.css">
+    <body>
+        
+        <!-- Book -->
+        <div id="book" class="book">
+            <input type="checkbox" id="c1">
+            <input type="checkbox" id="c2">
+            <input type="checkbox" id="c3">
+        <div id="cover">
+            <h2> 
+                This is something I daydream about often...
+            </h2>
+        </div>
+        
+        <div class="flip-book">
+       
+        <!--First Page-->
+        <div class="flip" id="p1">
+        <div class="back">   
+            <p1> Even though I am human and I made a mistake...
+            <!--Emoji-->
+            <div class="emoji-sad">
+                <div class="face">
+                    <div class="eyebrow-left"></div>
+                    <div class="eyebrow-right"></div>
+                    <div class="eye-left"></div>
+                    <div class="eye-right"></div>
+                    <div class="mouth-sad"></div>
+                </div>
+            </div>
+            </p1>
+            <label class="back-btn" for="c1">Back</label>
+        </div>
+        <div class="front">
+            <h2> 
+                Not sure if I would consider it a dream, but...
+            </h2>
+            <p>It is something I cant get out of my head recently.<br>
+                I lost a person that was close to me<br>
+                Everyone blames me for it, and so do I.
+            </p>
+            <label class="next-btn" for="c1">Next</label>
+        </div>
+        </div>
+        <!--Second Page-->
+        <div class="flip" id="p2">
+            <div class="back">   
+                <p2> It hurts that, even with help I can only do it alone.
+            <!--Emoji-->
+            <div class="emoji-sad">
+                <div class="face">
+                    <div class="eyebrow-left"></div>
+                    <div class="eyebrow-right"></div>
+                    <div class="eye-left"></div>
+                    <div class="eye-right"></div>
+                    <div class="mouth-sad"></div>
+                </div>
+            </div>
+                </p2>
+                <label class="back-btn" for="c2">Back</label>
+            </div>
+            <div class="front">
+                <h2> 
+                    Defending myself might have been selfish.
+                </h2>
+                <p> But when it came to my friend and our past, its like the longer we knew eachother. The further apart we got.</p>
+                <label class="next-btn" for="c2">Next</label>
+            </div>
+        </div>
+        <!--Third Page-->
+        <div class="flip" id="p3">
+            <div class="back">   
+                <p2>Some steps are meant to be taken alone...</p2>
+                <label class="back-btn" for="c3">Back</label>
+            </div>
+            <div class="front">
+                <h2> 
+                    My friend is now in a better place
+                </h2>
+                <p>Even with our ups and downs, all I had was love for them.<br>
+                    The time I need to take is to celebrate the life we had when we were together.<br>
+                    Rest In Petals...</p>
+                <label class="next-btn" for="c3">Next</label>
+            </div>
+        </div>
+    </body>
+</html>

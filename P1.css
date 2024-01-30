@@ -1,0 +1,152 @@
+body{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(90deg, #fff 50%, rgb(0, 0, 0) 50%);
+}
+input{
+    display: none;
+}
+.book{
+    display: flex;
+}
+
+#cover{
+    width: 250px;
+    height: 400px;
+    font-size: 1.9em;
+}
+.flip-book{
+    width: 250px;
+    height: 400px;
+    position: relative; 
+    perspective: 1500px;
+}
+.flip{ 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: .5s;
+    color: #000;
+}
+p{
+    font-size: 17px;
+    line-height: 24px;
+}
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 0 13px;
+    box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,0.5);
+}
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: #000;
+    font-size: 40px;
+    color:#fff;
+}
+.next-btn{
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+    cursor: pointer;
+    color:#000;
+    font-size: 40px;
+}
+.back-btn{
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+    cursor: pointer;
+    color:#fff;
+}
+#p1{
+    z-index: 3;
+}
+#p2{
+    z-index: 2;
+}
+#p3{
+    z-index: 1;
+}
+#c1:checked ~ .flip-book #p1{
+    transform: rotateY(-180deg);
+    z-index: 1;
+}
+#c2:checked ~ .flip-book #p2{
+    transform: rotateY(-180deg);
+    z-index: 2;
+}
+#c3:checked ~ .flip-book #p3{
+    transform: rotateY(-180deg);
+    z-index: 3;
+}
+
+  .emoji-sad {
+    position: fixed;
+    bottom: center;
+    width: 120px;
+    height: 120px;
+    background: #999999;
+    border-radius: 50%;
+    margin-left: 1%;
+  }
+  
+  .face {
+    width: inherit;
+    height: inherit;
+  }
+  
+  .eye-left {
+    position: absolute;
+    width: 11px;
+    height: 12px;
+    background: black;
+    left: 33px;
+    top: 40px;
+    border-radius: 50%;
+  }
+  
+  .eye-right {
+    position: absolute;
+
+    width: 11px;
+    height: 12px;
+    background: black;
+    right: 33px;
+    top: 40px;
+    border-radius: 50%;
+  }
+  
+  .mouth-sad {
+    position: absolute;
+    width: 78px;
+    height:80px;
+    border: 6px solid transparent;
+    top: 70px;
+    left: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-top-color: black;
+  }
