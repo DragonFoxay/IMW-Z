@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/*Did the sticky :)*/
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 36px;
+}
+
+.site-name {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+
+    li {
+        font-size: 18px;
+        display: inline-block;
+
+        &:first-child {
+            margin-right: 44px;
+        }
+
+        &:nth-child(2) {
+            margin-right: 44px;
+        }
+    }
+}
+
+.hero-section {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 120px;
+    line-height: 106px;
+    margin-bottom: 72px;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.call-to-action {
+    text-transform: uppercase;
+}
+
+/*Info-Section*/
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 320px;
+    border-bottom: 3px solid black;
+}
+
+.info-section-item2 {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+/*Sub-header One*/
+.info-section-item h3 {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+.info-section-item p {
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-bottom: 150px;
+    font-size: 20px;
+}
+
+.info-section-item a {
+    margin-left: 50px;
+}
+
+/*Sub-header Two*/
+.info-section-item2 h3 {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+.info-section-item2 p {
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-bottom: 150px;
+    font-size: 20px;
+}
+
+.info-section-item2 a {
+    margin-left: 50px;
+}
+
+/*Sub-header Three*/
+.info-section-item3 h3 {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+.info-section-item3 p {
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-bottom: 150px;
+    font-size: 20px;
+}
+
+.info-section-item3 a {
+    margin-left: 50px;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+/*About-Section*/
+.about {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.about h3 {
+    font-size: 25px;
+}
+
+.footer-column {
+    flex-grow: 1;
+    flex-basis: 100%;
+    margin-top: 40px;
+    word-spacing: 50px;
+    font-size: 25px;
+    font-weight: 100px;
+    color: black;
+}
+
+.footer-column2 {
+    flex-grow: 1;
+    flex-basis: 10%;
+}
+
+.container h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.container p {
+    margin-left: 40px;
+}
+
+.footer-column2 li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
