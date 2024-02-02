@@ -155,7 +155,7 @@ footer {
 
 .footer-column {
     flex-grow: 1;
-    flex-basis: 100%;
+    flex-basis: 85%;
     margin-top: 40px;
     word-spacing: 50px;
     font-size: 25px;
@@ -165,7 +165,7 @@ footer {
 
 .footer-column2 {
     flex-grow: 1;
-    flex-basis: 15%;
+    flex-basis: 17%;
 }
 
 .container h3 {
@@ -180,6 +180,8 @@ footer {
 
 .footer-column2 li {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
     margin-right: 40px;
 }
