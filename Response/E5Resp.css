@@ -1,0 +1,61 @@
+/* STYLES FOR RESPONSIVE DEMO */
+
+body {
+    background: #F6EA14;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    /* Constraint text size between 48px and 100px */
+    font-size: clamp(48px, 15vw, 300px);
+    font-family: 'Xanh Mono';
+}
+
+img {
+    /* Hides image on desktop */
+    display: none;
+}
+
+/* Desktop First Approach for Responsiveness */
+
+@media (max-width: 1199px) {
+    body {
+        background: black;
+        color: white;
+    }
+}
+
+@media (max-width: 991px) {
+    body {
+
+        background: blue;
+        color: white;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    img {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        background: red;
+        color: black;
+    }
+
+    h1 {
+        display: block;
+    }
+
+    img {
+        display: none;
+    }
+}
