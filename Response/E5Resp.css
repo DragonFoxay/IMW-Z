@@ -1,13 +1,28 @@
 /* STYLES FOR RESPONSIVE DEMO */
 
 body {
-    background: #F6EA14;
+    background: #ffffff;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
 }
+
+.box {
+    color: white;
+    text-align: center;
+}
+
+/*
+.box {
+    background: white;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    align-items: center;
+}*/
 
 h1 {
     /* Constraint text size between 48px and 100px */
@@ -21,18 +36,92 @@ img {
 }
 
 /* Desktop First Approach for Responsiveness */
-
-@media (max-width: 1199px) {
+@media (max-width: 2395px) {
     body {
-        background: black;
+        background: #e81416;
+        color: black;
+    }
+}
+
+@media (max-width: 2250px) {
+    body {
+        background: #ffa500;
         color: white;
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1950px) {
+    body {
+        background: #faeb36;
+        color: black;
+    }
+}
+
+@media (max-width: 1650px) {
+    body {
+        background: #79c314;
+        color: white;
+    }
+}
+
+@media (max-width: 1350px) {
+    body {
+        background: #487de7;
+        color: black;
+    }
+}
+
+@media (max-width: 1050px) {
+    body {
+        background: #4b369d;
+        color: white;
+    }
+}
+
+@media (max-width: 750px) {
+    body {
+        background: #70369d;
+        color: black;
+    }
+}
+
+/*height*/
+
+
+/* default hover effect */
+
+/*.box:hover {
+    color: black;
+    background: yellow;
+}*/
+
+@media (hover: hover) {
+
+    /* when hover is supported */
+    .box:hover {
+        color: white;
+        background: black;
+    }
+}
+
+.responsive-text:hover {
+    color: black;
+    background: yellow;
+}
+
+@media (hover: hover) {
+
+    /* when hover is supported */
+    .responsive-text:hover {
+        color: white;
+        background: black;
+    }
+}
+
+@media (max-width: 700px) {
     body {
 
-        background: blue;
+        background: black;
         color: white;
     }
 
@@ -45,7 +134,8 @@ img {
     }
 }
 
-@media (max-width: 767px) {
+/*
+@media (max-width: 750px) {
     body {
         background: red;
         color: black;
@@ -58,4 +148,26 @@ img {
     img {
         display: none;
     }
+}*/
+
+/* 
+@media (orientation:landscape) {
+    body {
+        background: pink;
+    }
+}
+
+@media (orientation:portrait) {
+    body {
+        background: #003f34;
+    }
+}
+*/
+
+.box {
+    background: white;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    align-items: center;
 }
