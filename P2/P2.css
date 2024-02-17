@@ -29,7 +29,7 @@ html {
 
 .navbar h1 {
     color: #fff;
-    font-family: sans-serif;
+    font-family: "Audiowide", sans-serif;
     text-transform: uppercase;
     align-items: center;
 }
@@ -45,6 +45,7 @@ html {
     text-decoration: none;
     color: #66fcf1;
     text-transform: uppercase;
+    font-family: "Audiowide", sans-serif;
 }
 
 .navbar ul li::after {
@@ -88,7 +89,7 @@ html {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
-    font-size: 20px
+    font-size: 20px;
 }
 
 .navi ul li {
@@ -122,6 +123,7 @@ html {
 /*Navbar End*/
 
 .title {
+
     width: 85%;
     margin: auto;
     min-height: 100px;
@@ -131,6 +133,11 @@ html {
     margin-bottom: 10px;
     text-transform: uppercase;
     color: #66fcf1;
+    font-weight: 500;
+}
+
+.title h1 {
+    font-family: "Audiowide", sans-serif;
 }
 
 .content {
@@ -152,11 +159,23 @@ html {
     background: #66fcf1;
 }
 
+.section2 h2 {
+    font-family: "Audiowide", sans-serif;
+}
+
+.section2 ul li h2 {
+    font-family: "Audiowide", sans-serif;
+}
+
 .section {
     background-color: #45A29E;
     flex: 1;
     font-size: 20px;
     color: white;
+}
+
+.section h3 {
+    font-family: "Audiowide", sans-serif;
 }
 
 .info {
@@ -168,13 +187,10 @@ html {
 
 .info h4 {
     font-size: 30px;
+    font-family: "Audiowide", sans-serif;
 }
 
-.info h2 {
-    font-size: 30px;
-    color: pink;
-}
-
+/*The magic :)*/
 .infoo {
     display: grid;
     gap: 1rem;
@@ -183,8 +199,10 @@ html {
     width: 85%;
 }
 
+/*:)*/
+
 h3 {
-    margin: 10px;
+    margin: 8px;
 }
 
 .footer {
@@ -203,6 +221,8 @@ h3 {
     background-color: black;
     background-size: cover;
 }
+
+/*Animation*/
 
 .info {
     background: var(--color-white);
@@ -254,6 +274,8 @@ h3 {
 .info:hover {
     color: var(--color-white);
 }
+
+/*Responsiveness*/
 
 @media (max-width: 1400px) {
     .wrapper {
