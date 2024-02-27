@@ -93,6 +93,12 @@ button {
     background: lightsalmon;
     width: 100px;
     height: 100px;
+    cursor: pointer;
+
+    &#yellow {
+        background-color: rgb(255, 166, 0);
+    }
+
 }
 
 #text-length {
