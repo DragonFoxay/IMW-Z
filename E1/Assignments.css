@@ -1,0 +1,136 @@
+/* Assignments.css */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensure it appears above other content */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* Align content in columns */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #f00;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.nav-items a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-container {
+    position: relative;
+    width: 80%;
+    /* Adjust the width as a percentage of the window width */
+    margin: auto;
+    overflow: hidden;
+    /* Hide overflow to prevent scrollbars */
+    border: 5px solid red;
+    /* Add a transparent border */
+}
+
+
+h1 {
+    text-align: center;
+    color: #f00;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f00;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    border: 2px solid #f00;
+    border-radius: 5px;
+    margin: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Tahoma', Geneva, sans-serif;
+}
+
+.button:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+.button.active {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.button.active:hover {
+    background-color: #f00;
+    border-color: #f00;
+}
+
+/* Style for the orbs */
+.orb {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    /* Change the color to white */
+    position: absolute;
+    /* Change position to absolute */
+    border-radius: 50%;
+    /* Make the orbs circular */
+    z-index: 1;
+}
+
+.refresh-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+}
+
+.refresh-button:hover {
+    background-color: #000;
+    border-color: #000;
+}
