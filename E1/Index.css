@@ -44,7 +44,7 @@ h1 {
     content: '';
     height: 3px;
     width: 0%;
-    background: #ff7300;
+    background: #ff0000;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -82,7 +82,7 @@ button {
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 3px solid #ff7300;
+    border: 3px solid #ff0000;
     background: transparent;
     color: #fff;
     cursor: pointer;
@@ -91,7 +91,7 @@ button {
 }
 
 span {
-    background: #ff7300;
+    background: #ff0000;
     height: 100%;
     width: 0;
     border-radius: 25px;
