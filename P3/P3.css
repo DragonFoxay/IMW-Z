@@ -1,0 +1,28 @@
+/* Style for the container */
+.container {
+    position: relative;
+    /* Ensure absolute positioning works relative to the container */
+    width: 100vw;
+    /* Set container width to viewport width */
+    height: 100vh;
+    /* Set container height to viewport height */
+    overflow: hidden;
+    /* Hide overflow content */
+}
+
+/* Style for the circle */
+.circle {
+    position: absolute;
+    top: -50px;
+    /* Offset the circle to be half off the screen from the top */
+    right: -50px;
+    /* Offset the circle to be half off the screen from the right */
+    width: 100px;
+    /* Fixed width */
+    height: 100px;
+    /* Fixed height */
+    border-radius: 50%;
+    /* Make it a circle */
+    background-color: blue;
+    /* Blue color */
+}
