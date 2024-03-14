@@ -2,6 +2,13 @@ h1 {
     color: #fff;
     font-family: sans-serif;
     text-transform: uppercase;
+    background-image: url(/IMW-Z/E9/Redmoon.png);
+    background-size: 33px 33px;
+    /* Adjust the size */
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    cursor: pointer;
+    /* Adjust the padding to create space between the icon and text */
 }
 
 * {
