@@ -11,16 +11,15 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    text-transform: uppercase;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     /* Add a subtle shadow */
 }
 
 header h1 {
     margin: 0;
-    font-size: 36px;
-    /* Slightly larger font size */
+    font-size: 40px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    /* Add a shadow effect to the text */
 }
 
 nav ul {
@@ -58,12 +57,17 @@ nav ul li a:hover {
 .greenhouse-section {
     padding: 50px 0;
     text-align: center;
+    border: 3px solid #2ecc71;
+    /* Add border with green color */
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .greenhouse-section h2 {
     font-size: 36px;
     margin-bottom: 20px;
     color: #2ecc71;
+    text-transform: uppercase;
     /* Green header color */
 }
 
@@ -76,8 +80,11 @@ nav ul li a:hover {
 }
 
 .greenhouse-section ul {
-    text-align: left;
+    text-align: center;
+    /* Center-align the list items */
     margin-bottom: 30px;
+    list-style: none;
+    /* Remove the bullets */
 }
 
 .greenhouse-section ul li {
