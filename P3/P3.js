@@ -13,7 +13,14 @@ function draw() {
     for (let i = 0; i < layers.length; i++) {
         layers[i].display();
     }
+
+    // Display hovering text
+    fill(0); // Set text color to black
+    textAlign(CENTER, CENTER); // Center align the text
+    textSize(20); // Set text size
+    text("Drag Edges & Drag Center", mouseX, mouseY); // Display text at mouse position
 }
+
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
@@ -77,7 +84,7 @@ class Layer {
     constructor(x, y, size, color) {
         this.x = x;
         this.y = y;
-        this.size = 300;
+        this.size = 250;
         this.color = color;
         this.dragging = false;
     }
@@ -99,8 +106,8 @@ class Layer {
     }
 
     isEdge(px, py) {
-        return dist(px, py, this.x, this.y) > this.size / 2 - 5 && dist(px, py, this.x, this.y) < this.size / 2 + 5;
-    }
+        return dist(px, py, this.x, this.y) > this.size / 3 && dist(px, py, this.x, this.y) < this.size / 2 + 5;
+    } // Edge control
 
     resize(mx, my) {
         let newSize = dist(mx, my, this.x, this.y) * 2;

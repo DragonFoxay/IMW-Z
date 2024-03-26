@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Slider</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        #codeDisplay {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <input type="range" min="0" max="100" value="0" class="slider" id="codeSlider">
+        <div id="codeDisplay">Code 1</div>
+    </div>
+
+    <script>
+        const codeSlider = document.getElementById('codeSlider');
+        const codeDisplay = document.getElementById('codeDisplay');
+
+        codeSlider.addEventListener('input', () => {
+            const sliderValue = parseInt(codeSlider.value);
+            if (sliderValue < 20) {
+                codeDisplay.textContent = "Code 1";
+
+            } if (sliderValue > 50) {
+                codeDisplay.textContent = "I wanted to try to make one code transition between two codes with a draggable slider but I am not able to";
+            } else {
+                codeDisplay.textContent = "Code 2";
+                // Include placeholder content or alternative functionality for Code 2
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>
