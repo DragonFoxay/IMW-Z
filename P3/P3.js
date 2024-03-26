@@ -1,6 +1,8 @@
 let layers = [];
 let layerSize = 90; // Adjust the maximum layer size as needed
 
+let resizingLayer = null; // Track the layer being resized
+
 function setup() {
     createCanvas(windowWidth, windowHeight);
     generateLayers();
@@ -34,20 +36,29 @@ function generateLayers() {
 }
 
 function mousePressed() {
+    resizingLayer = null; // Reset resizingLayer
     for (let i = layers.length - 1; i >= 0; i--) {
         if (layers[i].contains(mouseX, mouseY)) {
-            layers.push(layers.splice(i, 1)[0]);
+            if (layers[i].isEdge(mouseX, mouseY)) {
+                resizingLayer = layers[i]; // Set resizingLayer
+            } else {
+                layers.push(layers.splice(i, 1)[0]);
+            }
             return;
         }
     }
 }
 
 function mouseDragged() {
-    for (let i = 0; i < layers.length; i++) {
-        if (layers[i].dragging) {
-            layers[i].x = mouseX;
-            layers[i].y = mouseY;
-            return;
+    if (resizingLayer) {
+        resizingLayer.resize(mouseX, mouseY);
+    } else {
+        for (let i = 0; i < layers.length; i++) {
+            if (layers[i].dragging) {
+                layers[i].x = mouseX;
+                layers[i].y = mouseY;
+                return;
+            }
         }
     }
 }
@@ -85,5 +96,14 @@ class Layer {
         } else {
             return false;
         }
+    }
+
+    isEdge(px, py) {
+        return dist(px, py, this.x, this.y) > this.size / 2 - 5 && dist(px, py, this.x, this.y) < this.size / 2 + 5;
+    }
+
+    resize(mx, my) {
+        let newSize = dist(mx, my, this.x, this.y) * 2;
+        this.size = max(newSize, 10); // Minimum size to prevent collapse
     }
 }
